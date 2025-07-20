@@ -85,11 +85,31 @@ class SaveImage:
 
         return {"ui": {"images": results}}
 
+class MultilineString:
+    @classmethod
+    def INPUT_TYPES(cls):
+        return {
+            "required": {
+                "text": ("STRING", {"multiline": True, "default": "", "tooltip": "Enter your multiline text here"})
+            },
+        }
+
+    RETURN_TYPES = ("STRING",)
+    FUNCTION = "process_text"
+    CATEGORY = "text"
+    DESCRIPTION = "Converts multiline text input to string output."
+
+    def process_text(self, text):
+        return (text,)
+
+
 # Node registration
 NODE_CLASS_MAPPINGS = {
-    "SaveImage": SaveImage
+    "SaveImage": SaveImage,
+    "Multiline String": MultilineString
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
-    "SaveImage": "Save Image with Dynamic Metadata"
+    "SaveImage": "Save Image (Selective Metadata)",
+    "Multiline String": "Simple Node for Multiline String"
 }
