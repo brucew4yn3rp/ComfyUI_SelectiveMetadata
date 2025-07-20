@@ -4,7 +4,7 @@ Currently, there are 5 inputs allowed, with each needing a key and corresponding
 
 The most prevalent use case for such selectivity is being able to save the prompt in a clear manner, as seen below. 
 - To do so, the easiest method is to use a `String` node when typing the prompt, which can output text to both `CLIP Text Encode (Prompt)` as well as the `Save Image (Selective Metadata)` node. An example of this can be seen in the below workflow.
-- <img width="256" height="320" alt="image" src="https://github.com/user-attachments/assets/45696b16-3919-4056-bbf9-53a1cba6faaf" />
+ -  (such as `Multiline String` which has been packaged with this node for convenience)
 
 
 <img width="970" height="551" alt="image" src="https://github.com/user-attachments/assets/140c99cc-9f3f-406c-b1c7-daa69686ae19" />
