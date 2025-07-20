@@ -2,7 +2,8 @@ In an effort to clean up image metadata, this custom node allows users to select
 
 Currently, there are 5 inputs allowed, with each needing a key and corresponding metadata pair. If the key is empty, that key:metadata pair will be ignored.
 
-The most prevalent use case for such selectivity is being able to save the prompt in a clear manner, as seen below. To do so, the easiest method is to use a `String Literal` node when typing the prompt, which can output text to both `CLIP Text Encode (Prompt)` as well as the `Save Image (Selective Metadata)` node. 
+The most prevalent use case for such selectivity is being able to save the prompt in a clear manner, as seen below. 
+- To do so, the easiest method is to use a `String Literal` node when typing the prompt, which can output text to both `CLIP Text Encode (Prompt)` as well as the `Save Image (Selective Metadata)` node. An example of this can be seen in the below workflow.
 
 <img width="970" height="551" alt="image" src="https://github.com/user-attachments/assets/140c99cc-9f3f-406c-b1c7-daa69686ae19" />
 
