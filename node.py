@@ -32,11 +32,6 @@ class SaveImage:
                 "metadata_4": ("STRING", {"default": "", "tooltip": "Metadata value 4"}),
                 "key_5": ("STRING", {"default": "", "tooltip": "Metadata key 5"}),
                 "metadata_5": ("STRING", {"default": "", "tooltip": "Metadata value 5"}),
-            },
-            "hidden": {
-                "unique_id": "UNIQUE_ID",
-                "extra_pnginfo": "EXTRA_PNGINFO",
-                "prompt": "PROMPT"
             }
         }
 
